@@ -15,7 +15,7 @@ app.use(cors())
 
 app.use("/api", require('./routes/index'))
 
-http.listen(config.port, () => {
+app.listen(config.port, () => {
   console.log('Server is running in port', config.port);
 });
 
